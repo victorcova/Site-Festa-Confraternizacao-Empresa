@@ -1,0 +1,87 @@
+.transition {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+
+.list {
+  display: inline-block;
+  position: relative;
+  margin-left: 6px;
+  padding-top: 12px;
+  padding-bottom: 70px;
+  font-size: 20px;
+}
+.list ul {
+  text-align: center;
+  position: inherit;
+  padding: 0;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.list ul .active {
+  display: block;
+}
+.list li {
+  list-style: none;
+}
+.list li:first-child a {
+  color: #333333;
+}
+.list a {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: #009c8f;
+  position: relative;
+}
+.list a:after {
+  position: absolute;
+  content: '';
+  height: 5px;
+  width: 0;
+  left: 0;
+  background: #009c8f;
+  bottom: 0;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+.list a:hover {
+  cursor: pointer;
+  color: #009c8f;
+}
+.list a:hover:after {
+  width: 100%;
+}
+
+select {
+  display: inline;
+  border: 0;
+  width: auto;
+  margin-left: 10px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-bottom: 2px solid #555;
+  color: #009c8f;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+select:hover {
+  cursor: pointer;
+}
+select option {
+  border: 0;
+  border-bottom: 1px solid #555;
+  padding: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.placeholder {
+  border-bottom: 4px solid;
+  cursor: pointer;
+}
+.placeholder:hover {
+  color: #888888;
+}
